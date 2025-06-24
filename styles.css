@@ -1,0 +1,114 @@
+
+:root {
+  --red: #d63031;
+  --yellow: #feca57;
+  --black: #222;
+  --white: #fff;
+  --light-gray: #f0f0f0;
+  --dark-gray: #555;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  background: var(--light-gray);
+  color: var(--black);
+}
+
+header {
+  background: var(--red);
+  color: var(--white);
+  padding: 1rem;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  font-weight: 700;
+}
+
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+section {
+  background: var(--white);
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+}
+
+h2 {
+  color: var(--red);
+  margin-top: 0;
+}
+
+form {
+  margin-bottom: 1rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+input[type="text"], select {
+  flex-grow: 1;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 2px solid var(--red);
+  border-radius: 4px;
+}
+
+button {
+  background: var(--yellow);
+  border: none;
+  padding: 0.6rem 1.2rem;
+  color: var(--red);
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #ffda6a;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 0.5rem 0.75rem;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background: var(--red);
+  color: var(--white);
+  font-weight: 600;
+}
+
+tbody tr:hover {
+  background: var(--yellow);
+  cursor: default;
+}
+
+.remove-btn {
+  background: transparent;
+  border: none;
+  color: var(--red);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  color: var(--dark-gray);
+  font-size: 0.9rem;
+}

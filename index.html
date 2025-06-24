@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pool Tournament Tracker (Firebase)</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-database-compat.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Pool Tournament Tracker</h1>
+  </header>
+
+  <main>
+    <section id="players-section">
+      <h2>Players</h2>
+      <form id="add-player-form">
+        <input type="text" id="new-player-name" placeholder="Add new player" required />
+        <button type="submit">Add Player</button>
+      </form>
+      <table id="players-table">
+        <thead>
+          <tr>
+            <th>Player Name</th>
+            <th>Games</th>
+            <th>Wins</th>
+            <th>Losses</th>
+            <th>Win %</th>
+            <th>Remove</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
+    <section id="matches-section">
+      <h2>Record a Match</h2>
+      <form id="add-match-form">
+        <select id="player-a" required></select>
+        <select id="player-b" required></select>
+        <select id="winner" required></select>
+        <button type="submit">Add Match</button>
+      </form>
+    </section>
+
+    <section id="match-history-section">
+      <h2>Match History</h2>
+      <table id="matches-table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Player A</th>
+            <th>Player B</th>
+            <th>Winner</th>
+            <th>Date</th>
+            <th>Remove</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
+    <section id="leaderboard-section">
+      <h2>Leaderboard</h2>
+      <table id="leaderboard-table">
+        <thead>
+          <tr>
+            <th>Rank</th>
+            <th>Player</th>
+            <th>Wins</th>
+            <th>Games</th>
+            <th>Win %</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Pool Tournament Tracker</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
